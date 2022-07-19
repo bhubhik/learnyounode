@@ -1,7 +1,10 @@
-const hero = require('./heroes');
-const fs = require('fs');
+import { name } from './heroes.js';
+import chalk from 'chalk';
+import { writeFileSync, appendFileSync } from 'fs';
 const myLog = 'console.log("This is appended text")';
-fs.writeFileSync('text.txt', 'console.log("working")');
-fs.appendFileSync('text.txt', myLog);
-fs.appendFileSync('text.txt', hero.name.age);
-fs.appendFileSync('text.txt', hero.name.hero);
+writeFileSync('text.txt', 'console.log("working")');
+appendFileSync('text.txt', myLog);
+appendFileSync('text.txt', name.age);
+appendFileSync('text.txt', name.hero);
+console.log(chalk.blue.bgRed.bold('This is awesome'));
+console.log(chalk.bgYellow.black.bold(name.hero));
