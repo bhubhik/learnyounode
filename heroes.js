@@ -1,7 +1,7 @@
-const sh = require('superheroes');
-const hero = sh.random();
+import superheroes from 'superheroes';
+const hero = superheroes.random();
 
-exports.name = {
+export const name = {
   hero,
   age: '12',
 };

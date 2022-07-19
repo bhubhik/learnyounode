@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/bhubhik/learnyounode#readme",
   "dependencies": {
+    "chalk": "^5.0.1",
     "superheroes": "^3.0.0"
-  }
+  },
+  "type": "module"
 }
